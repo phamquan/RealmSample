@@ -21,4 +21,7 @@
     <Compile Update="Resources\AppResources.Designer.cs" DesignTime="true" AutoGen="true" DependentUpon="AppResources.resx" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Biz4.Core.Framework\Biz4.Core.Framework.csproj" />
+  </ItemGroup>
 </Project>

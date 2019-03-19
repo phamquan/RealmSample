@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealmSample.iOS", "RealmSam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biz4.RealmSample.ToDo", "Biz4.RealmSample.ToDo\Biz4.RealmSample.ToDo.csproj", "{B0DD5E2F-91F6-4684-AE9D-47A50DE4A1C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biz4.Core.Framework", "Biz4.Core.Framework\Biz4.Core.Framework.csproj", "{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,5 +87,21 @@ Global
 		{B0DD5E2F-91F6-4684-AE9D-47A50DE4A1C8}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{B0DD5E2F-91F6-4684-AE9D-47A50DE4A1C8}.AppStore|iPhone.ActiveCfg = Release|Any CPU
 		{B0DD5E2F-91F6-4684-AE9D-47A50DE4A1C8}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Release|iPhone.Build.0 = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{9526237B-EF2F-4B30-8AB9-F1D93F511B8D}.AppStore|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

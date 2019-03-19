@@ -8,9 +8,9 @@
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
     Title="{Binding Title}"
-    x:Class="Biz4.RealmSample.ToDo.Views.ViewA">
+    x:Class="Biz4.RealmSample.ToDo.Views.ToDoList">
     <Label
-        Text="View A from your Prism Module"
+        Text="View ToDoList from your Prism Module"
         HorizontalOptions="CenterAndExpand"
         VerticalOptions="CenterAndExpand" />
 </ContentPage>

@@ -1,5 +1,7 @@
-﻿using Prism;
+﻿using Biz4.RealmSample.ToDo;
+using Prism;
 using Prism.Ioc;
+using Prism.Modularity;
 using RealmSample.ViewModels;
 using RealmSample.Views;
 using Xamarin.Forms;
@@ -19,11 +21,18 @@ namespace RealmSample
 
         public App(IPlatformInitializer initializer) : base(initializer) { }
 
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            base.ConfigureModuleCatalog(moduleCatalog);
+
+            moduleCatalog.AddModule<ToDo>();
+        }
+
         protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/ToDoList");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

@@ -3,6 +3,8 @@ using Biz4.RealmSample.ToDo.Resources;
 using Prism.Ioc;
 using Prism.Modularity;
 using Xamarin.Forms;
+using Biz4.RealmSample.ToDo.Views;
+using Biz4.RealmSample.ToDo.ViewModels;
 
 namespace Biz4.RealmSample.ToDo
 {
@@ -16,7 +18,7 @@ namespace Biz4.RealmSample.ToDo
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterForNavigation<ToDoList, ToDoListViewModel>();
         }
     }
 }
