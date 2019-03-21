@@ -32,7 +32,7 @@ namespace RealmSample
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/ToDoList");
+            await NavigationService.NavigateAsync("NavigationPage/ToDoListPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

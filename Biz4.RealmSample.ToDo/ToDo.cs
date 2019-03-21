@@ -5,6 +5,8 @@ using Prism.Modularity;
 using Xamarin.Forms;
 using Biz4.RealmSample.ToDo.Views;
 using Biz4.RealmSample.ToDo.ViewModels;
+using Biz4.RealmSample.ToDo.Services;
+using Biz4.RealmSample.ToDo.Repositories;
 
 namespace Biz4.RealmSample.ToDo
 {
@@ -18,7 +20,10 @@ namespace Biz4.RealmSample.ToDo
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<ToDoList, ToDoListViewModel>();
+            containerRegistry.Register<IToDoRepository, ToDoRepository>();
+            containerRegistry.Register<ILocalService, RealmService>();
+            containerRegistry.RegisterForNavigation<ToDoListPage, ToDoListPageViewModel>();
+            containerRegistry.RegisterForNavigation<AddItemPage, AddItemPageViewModel>();
         }
     }
 }

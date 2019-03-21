@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Biz4.RealmSample.ToDo.Views.AddItemPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Name="MenuItem1"
+            Text="Add"
+            Priority="0"
+            Command="{Binding AddCommand}" />
+    </ContentPage.ToolbarItems>
+    <StackLayout
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill">
+        <Entry
+            Placeholder="Title" Text="{Binding TaskTitle}" />
+        <Editor
+            Placeholder="Content" VerticalOptions="StartAndExpand" Text="{Binding TaskContent}" />
+    </StackLayout>
+</ContentPage>

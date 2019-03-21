@@ -14,6 +14,8 @@
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.220655" />
     <PackageReference Include="Mobile.BuildTools" Version="1.4.0.638" />
     <PackageReference Include="Prism.QuickStart.MFractor.Config" Version="1.0.3" />
+    <PackageReference Include="Realm" Version="3.4.0" />
+    <PackageReference Include="RangedObservableCollection" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,5 +25,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Biz4.Core.Framework\Biz4.Core.Framework.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="FodyWeavers.xml" />
   </ItemGroup>
 </Project>

@@ -8,9 +8,27 @@
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
     Title="{Binding Title}"
-    x:Class="Biz4.RealmSample.ToDo.Views.ToDoList">
+    x:Class="Biz4.RealmSample.ToDo.Views.ToDoListPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Name="MenuItem1"
+            Text="Add"
+            Priority="0"
+            Command="{Binding AddCommand}" />
+    </ContentPage.ToolbarItems>
     <Label
         Text="View ToDoList from your Prism Module"
         HorizontalOptions="CenterAndExpand"
         VerticalOptions="CenterAndExpand" />
+    <ListView
+        Margin="0,20,0,0"
+        ItemsSource="{Binding Tasks}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell
+                    Text="{Binding Title}"
+                    Detail="{Binding Content}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
